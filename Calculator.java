@@ -10,13 +10,15 @@ public class Calculator{
         int mul = multiplication(a, b);
         int div = division(a, b);
         int squareA = square(a);
+        int maximum = maximum(a, b);
         int minimum = minimum(a, b);
         System.out.println("Addition of" + a + " and " + b + " is " + sum);
         System.out.println("Difference of " + a + " and " + b + " is " + diff);  
         System.out.println("Multiplication of " + a + " and " + b + " is " + mul);
         System.out.println("Division of " + a + " and " + b + " is " + div);
         System.out.println("Square of "+a+" is "+squareA);
-        System.out.println("Maximum of "+a+" and "+b+" is "+minimum);
+        System.out.println("Maximum of "+a+" and "+b+" is "+maximum);
+        System.out.println("Minimu of "+a+" and "+b+" is "+minimum);
         
         sc.close();
     }
