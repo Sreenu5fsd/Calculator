@@ -16,7 +16,7 @@ public class Calculator{
         System.out.println("Multiplication of " + a + " and " + b + " is " + mul);
         System.out.println("Division of " + a + " and " + b + " is " + div);
         System.out.println("Square of "+a+" is "+squareA);
-        System.out.println("Maximum of "+a+" and "+b+" is "+minimum);
+        System.out.println("Minimum of "+a+" and "+b+" is "+minimum);
         
         sc.close();
     }
