@@ -12,6 +12,7 @@ public class Calculator{
         int squareA = square(a);
         int maximum = maximum(a, b);
         int minimum = minimum(a, b);
+        int squareRoot = squareRoot(a);
         int APlusBWholeSquare = APlusBWholeSquare(a , b);
         System.out.println("Addition of " + a + " and " + b + " is " + sum);
         System.out.println("Difference of " + a + " and " + b + " is " + diff);  
@@ -20,7 +21,9 @@ public class Calculator{
         System.out.println("Square of "+a+" is "+squareA);
         System.out.println("Minimum of "+a+" and "+b+" is "+minimum);
         System.out.println("Maximum of "+a+" and "+b+" is "+maximum);  
+        System.out.println("Square Root of "+a+" is "+squareRoot);    
         System.out.println("APlusBWholeSquare of "+a+" and "+b+" is "+APlusBWholeSquare);   
+
         sc.close();
     }
     public static int addition(int a , int b){
@@ -43,6 +46,9 @@ public class Calculator{
     }
     public static int minimum(int a , int b){
         return Math.min(a , b);
+    }
+    public static int squareRoot(int a){
+        return (int) Math.sqrt(a);
     }
     public static int APlusBWholeSquare(int a , int b){
           return (a + b) * (a + b);
