@@ -12,13 +12,15 @@ public class Calculator{
         int squareA = square(a);
         int maximum = maximum(a, b);
         int minimum = minimum(a, b);
-        System.out.println("Addition of" + a + " and " + b + " is " + sum);
+        int squareRoot = squareRoot(a);
+        System.out.println("Addition of " + a + " and " + b + " is :" + sum);
         System.out.println("Difference of " + a + " and " + b + " is " + diff);  
         System.out.println("Multiplication of " + a + " and " + b + " is " + mul);
         System.out.println("Division of " + a + " and " + b + " is " + div);
         System.out.println("Square of "+a+" is "+squareA);
         System.out.println("Minimum of "+a+" and "+b+" is "+minimum);
-        System.out.println("Maximum of "+a+" and "+b+" is "+maximum);     
+        System.out.println("Maximum of "+a+" and "+b+" is "+maximum);
+        System.out.println("Square Root of "+a+" is "+squareRoot);     
         sc.close();
     }
     public static int addition(int a , int b){
@@ -41,5 +43,8 @@ public class Calculator{
     }
     public static int minimum(int a , int b){
         return Math.min(a , b);
+    }
+    public static int squareRoot(int a){
+        return (int) Math.sqrt(a);
     }
 }
