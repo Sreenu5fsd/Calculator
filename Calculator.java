@@ -14,6 +14,8 @@ public class Calculator{
         int minimum = minimum(a, b);
         int squareRoot = squareRoot(a);
         int APlusBWholeSquare = APlusBWholeSquare(a , b);
+        int gcd = gcd(a, b);
+        int lcm  = lcm(a, b);
         System.out.println("Addition of " + a + " and " + b + " is " + sum);
         System.out.println("Difference of " + a + " and " + b + " is " + diff);  
         System.out.println("Multiplication of " + a + " and " + b + " is " + mul);
@@ -22,8 +24,9 @@ public class Calculator{
         System.out.println("Minimum of "+a+" and "+b+" is "+minimum);
         System.out.println("Maximum of "+a+" and "+b+" is "+maximum);  
         System.out.println("Square Root of "+a+" is "+squareRoot);    
-        System.out.println("APlusBWholeSquare of "+a+" and "+b+" is "+APlusBWholeSquare);   
-
+        System.out.println("APlusBWholeSquare of "+a+" and "+b+" is "+APlusBWholeSquare);  
+        System.out.println("GCD of "+a+" and "+b+" is "+gcd); 
+        System.out.println("LCM of "+a+" and "+b+" is "+lcm);  
         sc.close();
     }
     public static int addition(int a , int b){
@@ -52,5 +55,11 @@ public class Calculator{
     }
     public static int APlusBWholeSquare(int a , int b){
           return (a + b) * (a + b);
+    }
+    public static int gcd(int a , int b){
+        return (b == 0) ? a : gcd(b , a % b);
+    }
+    public static int lcm(int a , int b){
+        return multiplication(a, b) / gcd(a , b);
     }
 }
